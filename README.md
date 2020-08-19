@@ -20,7 +20,7 @@ https://github.com/WCF-Insurance/java-developer-cell-phone-usage
 | | * Purchase Date|
 | | * Minutes Used By Month|
 | | * Minutes Used By Month|
-|4 |Print report to a local printer|
+|4 |Print report to a local printer-Will generate PDF and display|
 
 
 # Design
@@ -39,13 +39,22 @@ https://github.com/WCF-Insurance/java-developer-cell-phone-usage
 * Use PDF generation library ??? version 
 
 # ToDo
-
+* Unit Testing
+* Rounding
+* Printing report to printer
     
 # Q&A
-* Clarify requirement under Details Section "For each company cell phone...".
+* Clarify the requirement under Details Section "For each company cell phone...".
   Requirement does not match data in details section.
-*  
+
 
 # Running the app
+mvn clean install
+cd target
+java -jar cellphone-0.0.1-SNAPSHOT.jar --cellphoneusage.report.year=2018 --employee.csv.file=..\\data\\CellPhone.csv --cellphoneusage.csv.file=..\\data\\CellPhoneUsageByMonth.csv
+
 
 # Project Status
+Did not finish
+Did not implement PDF generation or printing
+Outputting report results to System.out
