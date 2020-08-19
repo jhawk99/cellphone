@@ -49,9 +49,9 @@ https://github.com/WCF-Insurance/java-developer-cell-phone-usage
 
 
 # Running the app
-mvn clean install
-cd target
-java -jar cellphone-0.0.1-SNAPSHOT.jar --cellphoneusage.report.year=2018 --employee.csv.file=..\\data\\CellPhone.csv --cellphoneusage.csv.file=..\\data\\CellPhoneUsageByMonth.csv
+1. mvn clean install
+2. cd target
+3. java -jar cellphone-0.0.1-SNAPSHOT.jar --cellphoneusage.report.year=2018 --employee.csv.file=..\\data\\CellPhone.csv --cellphoneusage.csv.file=..\\data\\CellPhoneUsageByMonth.csv
 
 
 # Project Status
